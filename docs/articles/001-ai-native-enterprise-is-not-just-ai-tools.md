@@ -1,4 +1,6 @@
-An AI Native Enterprise Should Not Mean Just Giving Every Employee a Few AI Tools
+# An AI Native Enterprise Should Not Mean Just Giving Every Employee a Few AI Tools
+
+> This is the first note in a series about AI Native enterprise organization, Agent-based operating models, and data governance for enterprise AI.
 
 Over the past two years, many companies have been talking about AI transformation.  People have tried many AI tools. They are genuinely useful for writing copy, making spreadsheets, summarizing meetings, generating code, and searching for information. But once we move into real enterprise operations, things become much more complicated. The problem is not that these tools are bad. The real issue is that enterprises have their own operating model. An individual using an AI tool and a company putting AI into its organizational workflow are two very different things.
 
@@ -21,9 +23,9 @@ This will create a new organizational form: the human organization structure and
 
 To make this possible, the first step is to build a data governance system for Agents.  Enterprise data should not only mean tables in a database. Files, knowledge bases, business metrics, reports, meeting notes, system instructions, external APIs, MCP tool calls, customer information in CRM, documents in collaboration tools, and content in code repositories should all be treated as data assets. As long as an Agent can read, reference, process, call, or execute something, it should be brought under permission  management. I think there should be at least three basic rules here.
 
-First, every data asset must have ownership. Data should not be treated as some “public object inside the system”. It must belong to a department, a system, or a  clearly responsible owner.
-Second, Agent access to data must be constrained by levels and permissions. An Agent’s permissions should be derived from the person, role, department, and task context it belongs to, instead of assuming that it can see everything by default.
-Third, cross-department access must be explicitly authorized. If an Agent from one department wants to use data from another department, there must be an uthorization record, a purpose of use, an access level, and an expiration time.
+# First, every data asset must have ownership. Data should not be treated as some “public object inside the system”. It must belong to a department, a system, or a  clearly responsible owner.
+# Second, Agent access to data must be constrained by levels and permissions. An Agent’s permissions should be derived from the person, role, department, and task context it belongs to, instead of assuming that it can see everything by default.
+# Third, cross-department access must be explicitly authorized. If an Agent from one department wants to use data from another department, there must be an uthorization record, a purpose of use, an access level, and an expiration time.
 
 Only on top of these three rules can an enterprise build a truly controllable Agent execution engine. This execution engine is not just a simple wrapper around a large language model. It needs to manage identity, permissions, tasks, data, tools, audit, and collaboration. It needs to know who the Agent is, whom it represents, what it can access, what it can do, why it is allowed to do it, and where the result should go after the work is done. Once this infrastructure is in place, AI will no longer be just a personal productivity tool for employees. It will become part of how the enterprise organization actually operates.
 
